@@ -3,6 +3,7 @@ FROM node:18-alpine AS build-stage
 WORKDIR /app
 
 COPY package.json package-lock.json* ./
+RUN npm install 
 RUN npm ci 
 
 COPY . .
