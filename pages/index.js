@@ -24,7 +24,7 @@ export default function Home() {
 
   return (
     <div className={styles.container}>
-      <h1>Hello World!</h1>
+      <h1>Hello USA!</h1>
 
       <p>After you enter your plugin URL, you will receive the following setup data from Dashibase to use in your plugin:</p>
       <ul>
@@ -33,9 +33,6 @@ export default function Home() {
         <li>messageType: { setupData ? (setupData.messageType) : (<span>Loading</span>) }</li>
         <li>store: { setupData ? (JSON.stringify(setupData.store)) : (<span>Loading</span>) }</li>
       </ul>
-
-      <p>You can use then the columnIds to pull any info about the item (e.g. email address, Stripe ID, etc.) to use in your plugin.</p>
-      <p>If you have any questions, check out <a href="https://dashibase.com/docs">our documentation and guide</a> or email us at sk@dashibase.com.</p>
     </div>
   )
 }
